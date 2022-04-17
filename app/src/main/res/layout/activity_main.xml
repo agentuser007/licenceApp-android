@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户"
+            android:textSize="30dp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/select_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectF"
+            android:text="展示20个燃油车牌" />
+        <Button
+            android:id="@+id/select_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示20个电动车牌"
+            android:onClick="selectE"/>
+
+        <TextView
+            android:id="@+id/select_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
